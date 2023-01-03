@@ -25,6 +25,9 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     # 가계부
     path('ledgers/', include('ledgers.urls')),
+    # 단축 url
     path('shortener/', include('shortener.urls')),
     path('<new_url>/', views.original, name='original'),
+    # 출석부
+    path('attendaces/', include('attendances.urls')),
 ]

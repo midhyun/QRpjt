@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'shortener',
     'django_extensions',
     'django_bootstrap5',
+    # 출석부
+    'attendances',
     # 자릿수 표기를 위한 내장기능사용
     'django.contrib.humanize',
     # django-rest-auth
@@ -66,7 +68,7 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
-SITE_URL = 'localhost:8000/'
+SITE_URL = '127.0.0.1:8000/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
